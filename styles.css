@@ -1,13 +1,15 @@
-/*
- * Globals
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 /* Custom default button */
 .btn-light,
 .btn-light:hover,
 .btn-light:focus {
-  color: #333;
+  color: #e0d4d4;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
@@ -21,14 +23,31 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 42em;
-}
+  
 
 
 /*
  * Header
  */
+ .banner-wrap {
+  background-image: url(./Assets/Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+}
 
 .nav-masthead .nav-link {
   color: rgba(255, 255, 255, .5);
