@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 /* Custom default button */
 .btn-light,
 .btn-light:hover,
@@ -12,7 +11,6 @@
   color: #e0d4d4;
   text-shadow: none; /* Prevent inheritance from `body` */
 }
-
 
 /*
  * Base structure
@@ -23,12 +21,16 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-  
-
-
 /*
  * Header
  */
+
+ .scrolling {
+  background: black;
+  opacity: 80%;
+  transition: all 0.5s;
+}
+
  .banner-wrap {
   background-image: url(./Assets/Banner.jpg);
   background-size: cover;
